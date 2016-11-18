@@ -1,0 +1,21 @@
+!N and |N will not be in the same line
+
+the environment variable will not be only PATH, but also others.
+but in one time we should only consider one environment variable.
+(can be implement by a array)
+
+the '>' will overwrite the exist file if it need to.
+(ie : there is a test.txt, and our command is "ls tmp.txt > test.txt")
+and '>' will only occur in the end of the line,
+also, it willnot be the first word of commands
+
+"printenv" "setenv" and "exit" will occur only without other commands.
+
+the excuting file should be put in 0556091, 
+when it is excuted, use "chdir" to change the path to the ras/.
+
+if one wrong command occurs in the command line, 
+the whole output only should be the error msg.
+
+welcome msg only need to be in three lines. 
+
